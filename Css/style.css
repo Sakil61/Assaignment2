@@ -1,0 +1,47 @@
+body{
+    color: ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: #8987A1;
+    align-items: center;
+}
+.menu-list{
+    display: flex;
+}
+.item{
+    list-style: none;
+    margin: 10px;
+}
+.menu{
+    text-decoration: none;
+}
+.test-style{
+    color: black;
+    font-weight: bold;
+}
+.head-sec{
+    max-width: 1440px;
+    margin: 30px 150px;
+}
+.bannar1{
+    margin: 120px 150px;
+
+}
+.bn-head{
+    color: #000000;
+    font-weight: bold;
+    font-size: 50px;
+}
+.color-pr{
+ color: #E95A08;
+}
+.head-p{
+    color:rgba(0, 0, 0, 0.5);
+}
+.bn-flex{
+    display: flex;
+    width: 100%;
+}
