@@ -2,7 +2,13 @@ body{
     color: ;
 }
 
-.navbar{
+.noto-serif{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+.navbar,.item-1{
     display: flex;
     justify-content: space-between;
     color: #8987A1;
@@ -11,7 +17,7 @@ body{
 .menu-list{
     display: flex;
 }
-.item{
+.item,.item-1{
     list-style: none;
     margin: 10px;
 }
@@ -21,6 +27,15 @@ body{
 .test-style{
     color: black;
     font-weight: bold;
+}
+@media screen and (max-width: 576px) {
+    .item{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+       
+    }
 }
 .head-sec{
     max-width: 1440px;
@@ -34,6 +49,7 @@ body{
     color: #000000;
     font-weight: bold;
     font-size: 50px;
+    white-space: nowrap;
 }
 .color-pr{
  color: #E95A08;
@@ -44,4 +60,37 @@ body{
 .bn-flex{
     display: flex;
     width: 100%;
+}
+.bn2-title{
+    font-size: 22px;
+}
+.cart-butt{
+    background-color: #E95A08;
+    color: white;
+    padding: 15px 85px;
+    border: none;
+}
+.bn-head2{
+    font-size: 50px;
+}
+.color-bn2{
+    color: #E95A08;
+}
+.head2-p{
+    color: #8987A1 ;
+    margin-top: 5px;
+}
+.card-had{
+    text-align: center;
+}
+.bn2-title{
+    margin: 10px 50px;
+}
+.flower-list{
+    margin: 120px 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
 }
