@@ -52,7 +52,7 @@ body{
     }
 
     .navbar img {
-        width: 120px; /* optional: smaller logo for mobile */
+        width: 120px;
     }
 }
 .head-sec{
@@ -68,6 +68,28 @@ body{
     font-weight: bold;
     font-size: 50px;
     white-space: nowrap;
+}
+@media (max-width: 768px) {
+    .bn-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    .bn-head {
+        font-size: 32px;
+    }
+    .head-p {
+        font-size: 14px;
+    }
+    .first-car {
+        max-width: 100%;
+    }
+
+    .bannar1 {
+        margin: 80px auto;
+        padding: 0 20px;
+    }
 }
 .color-pr{
  color: #E95A08;
@@ -98,6 +120,20 @@ body{
 .card-had{
     text-align: center;
 }
+@media (max-width: 768px) {
+    .flower-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .bn2-title {
+        font-size: 16px;
+    }
+    .cart-butt {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
 .bage{
     width: 260px;
     height: 260px;
@@ -132,7 +168,22 @@ body{
     display: flex;
     gap: 20px;
 }
+@media (max-width: 768px) {
+    .extra-card {
+        flex-direction: column;
+        padding: 0 20px;
+        text-align: center;
+    }
 
+    .extra-card h3.extra-hed {
+        font-size: 22px;
+    }
+
+    .extra-card li {
+        text-align: left;
+        font-size: 14px;
+    }
+}
 
 .img-main {
     display: flex;
@@ -285,3 +336,34 @@ body{
   .colo{
     color: rgba(0, 0, 0, 0.5);
   }
+  @media (max-width: 768px) {
+
+    .second-pig {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1, .img2, {
+        width: 100%;
+    }
+
+    .big-img input[type="text"],
+    .big-img button {
+        width: 15%;
+        margin: 10px auto;
+    }
+
+    .foot-sec {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .img-re {
+        margin-top: 20px;
+    }
+
+    .img-re img {
+        margin: 0 8px;
+    }
+}
