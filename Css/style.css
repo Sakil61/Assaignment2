@@ -1,7 +1,12 @@
 body{
-    color: ;
+    background-color: #d8d6ee;
 }
-
+.container {
+    max-width: 1400px;
+    margin:auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
 .noto-serif{
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
@@ -28,13 +33,26 @@ body{
     color: black;
     font-weight: bold;
 }
-@media screen and (max-width: 576px) {
-    .item{
+@media (max-width: 768px) {
+    .menu-list {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .item {
         display: none;
     }
-    .navbar{
-        justify-content: space-between;
-       
+
+    .item-1 {
+        display: block;
+    }
+
+    .head-sec {
+        margin: 20px 30px;
+    }
+
+    .navbar img {
+        width: 120px; /* optional: smaller logo for mobile */
     }
 }
 .head-sec{
@@ -80,6 +98,13 @@ body{
 .card-had{
     text-align: center;
 }
+.bage{
+    width: 260px;
+    height: 260px;
+     position: absolute;
+     right:-10% ;
+    transform: translate(-0% -100%);
+}
 .flower-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -103,28 +128,30 @@ body{
 }
 
 
+.second-pig {
+    display: flex;
+    gap: 20px;
+}
+
+
 .img-main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
 }
 
-
 .img1, .img2, .img3 {
-    background-size: cover;
+   
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
     padding: 40px 30px;
     color: white;
-    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 300px; 
+    width: 500px;
 }
-
 
 .img1 {
     background-image: url('deal-bloom.png');
@@ -136,13 +163,16 @@ body{
 
 .img3 {
     background-image: url('deal-zabo.png');
-    width: 300px; 
+    width: 500px; 
 }
+
 
 .img1 h3, .img2 h3, .img3 h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .img1 a, .img2 a, .img3 a {
@@ -150,10 +180,11 @@ body{
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
-    display: inline-block;
+   
     font-weight: bold;
     text-align: center;
 }
+
 
 .big-img {
     margin: 30px 0;
